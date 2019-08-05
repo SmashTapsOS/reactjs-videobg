@@ -1,5 +1,5 @@
 import React from "react";
-import VideoBg from "react-video-bg";
+import VideoBg from "reactjs-videobg";
 import ogg from "./videos/Neon.ogg";
 import webm from "./videos/Neon.webm";
 import mp4 from "./videos/Neon.mp4";

@@ -6,7 +6,7 @@
     "react": "16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1",
-    "react-video-bg": "file:../.."
+    "reactjs-videobg": "file:../.."
   },
   "scripts": {
     "start": "SKIP_PREFLIGHT_CHECK=true react-scripts start",

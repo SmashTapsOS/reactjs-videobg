@@ -1,6 +1,6 @@
 {
-  "name": "react-video-bg",
-  "version": "0.0.0-development",
+  "name": "reactjs-videobg",
+  "version": "1.0.0",
   "description": "Easily add background videos to react web apps.",
   "main": "./dist/bundle.cjs.js",
   "module": "./dist/bundle.esm.js",
@@ -20,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/samAbeywickrama/react-video-bg.git"
+    "url": "https://github.com/samAbeywickrama/reactjs-videobg.git"
   },
   "keywords": [
     "react",
@@ -34,9 +34,9 @@
   "author": "Sameera C Abeywickrama",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/samAbeywickrama/react-video-bg/issues"
+    "url": "https://github.com/samAbeywickrama/reactjs-videobg/issues"
   },
-  "homepage": "https://github.com/samAbeywickrama/react-video-bg#readme",
+  "homepage": "https://github.com/samAbeywickrama/reactjs-videobg#readme",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",

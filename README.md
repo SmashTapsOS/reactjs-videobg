@@ -1,9 +1,9 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![Build Status](https://travis-ci.org/samAbeywickrama/react-video-bg.svg?branch=master)](https://travis-ci.org/samAbeywickrama/react-video-bg)
+[![Build Status](https://travis-ci.org/samAbeywickrama/reactjs-videobg.svg?branch=master)](https://travis-ci.org/samAbeywickrama/reactjs-videobg)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
-# react-video-bg
+# reactjs-videobg
 
 Easily add background videos to your webapps
 
@@ -11,17 +11,17 @@ Easily add background videos to your webapps
 
 ### npm
 
-`npm i react-video-bg`
+`npm i reactjs-videobg`
 
 ### yarn
 
-`yarn add react-video-bg`
+`yarn add reactjs-videobg`
 
 ## Usage
 
 ```jsx
 import React from "react";
-import VideoBg from "react-video-bg";
+import VideoBg from "reactjs-videobg";
 import ogg from "./videos/Neon.ogg";
 import webm from "./videos/Neon.webm";
 import mp4 from "./videos/Neon.mp4";
