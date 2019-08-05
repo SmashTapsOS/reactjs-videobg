@@ -10,9 +10,10 @@ const VideoBg = ({
   muted = true,
   autoPlay = true,
   poster,
-  children
+  children,
+  el: El = "div"
 }) => (
-  <div className={`${wrapperClass} ${classNames.wrapper}`}>
+  <El className={`${wrapperClass} ${classNames.wrapper}`}>
     <video
       className={`${videoClass} ${classNames.video}`}
       loop={loop}
@@ -22,7 +23,7 @@ const VideoBg = ({
     >
       {children}
     </video>
-  </div>
+  </El>
 );
 
 VideoBg.propTypes = {
@@ -41,7 +42,8 @@ VideoBg.propTypes = {
         type: Source
       })
     )
-  ])
+  ]),
+  el: PropTypes.string
 };
 
 VideoBg.Source = Source;
