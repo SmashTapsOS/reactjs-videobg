@@ -1,0 +1,96 @@
+{
+  "name": "react-video-bg",
+  "version": "0.0.0-development",
+  "description": "Easily add background videos to react web apps.",
+  "main": "./dist/bundle.cjs.js",
+  "module": "./dist/bundle.esm.js",
+  "scripts": {
+    "lint": "eslint 'src/**/*.js'",
+    "lint:fix": "eslint 'src/**/*.js' --fix",
+    "prettify": "prettier 'src/**/*.js' --write",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "commit": "git-cz",
+    "build": "rollup -c",
+    "build:watch": "rollup -c -w",
+    "prebuild": "rimraf dist",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samAbeywickrama/react-video-bg.git"
+  },
+  "keywords": [
+    "react",
+    "react-bg",
+    "react-background-video",
+    "react-video",
+    "react-background",
+    "video-background",
+    "react"
+  ],
+  "author": "Sameera C Abeywickrama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samAbeywickrama/react-video-bg/issues"
+  },
+  "homepage": "https://github.com/samAbeywickrama/react-video-bg#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "babel-jest": "^24.8.0",
+    "commitizen": "^4.0.3",
+    "coveralls": "^3.0.5",
+    "cz-conventional-changelog": "3.0.2",
+    "eslint": "^6.1.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-jest": "^22.14.1",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "git-cz": "^3.2.1",
+    "husky": "3.0.2",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.8.0",
+    "prettier": "1.18.2",
+    "prop-types": "15.7.2",
+    "react": "^16.8.6",
+    "react-test-renderer": "^16.8.6",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.17.0",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "10.0.2",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-terser": "^5.1.1",
+    "semantic-release": "^15.13.19"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run prettify && npm run lint && npm run test"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css)$": "<rootDir>/__mocks__/styles.js",
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  }
+}

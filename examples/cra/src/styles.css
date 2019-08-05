@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.form {
+  background: #fff;
+  width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  border-radius: 3px;
+}
+.form input {
+  width: 90%;
+  height: 40px;
+  margin-bottom: 10px;
+  padding: 4px;
+  border: 1px solid #e2e2e2;
+}
+
+button {
+  width: 20%;
+  padding: 10px;
+  background: cornflowerblue;
+  border: none;
+  color: #fff;
+}

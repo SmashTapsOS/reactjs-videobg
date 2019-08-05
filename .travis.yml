@@ -1,0 +1,20 @@
+sudo: false
+language: node_js
+
+branches:
+  only:
+    - master
+
+node_js:
+  - node
+
+after_success:
+  - npm run semantic-release
+
+script:
+  - npm run lint
+  - npm run test:coveralls
+  - npm run build
+
+notifications:
+  email: false

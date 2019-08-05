@@ -1,0 +1,13 @@
+/example
+/__mocks__
+/.vscode
+/src
+.babelrc
+.editorconfig
+.eslintignore
+.eslintrc.json
+.gitignore
+.prettierignore
+.travis.yml
+commitlint.config.js
+rollup.config.js
