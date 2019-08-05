@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders properly 1`] = `
+<div
+  className="undefined undefined"
+>
+  <video
+    autoPlay={true}
+    className="undefined undefined"
+    loop={true}
+    muted={true}
+  />
+</div>
+`;
