@@ -2,11 +2,11 @@
 
 exports[`renders properly 1`] = `
 <div
-  className="undefined undefined"
+  className="undefined"
 >
   <video
     autoPlay={true}
-    className="undefined undefined"
+    className="undefined"
     loop={true}
     muted={true}
   />

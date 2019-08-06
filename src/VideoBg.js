@@ -13,9 +13,11 @@ const VideoBg = ({
   children,
   el: El = "div"
 }) => (
-  <El className={`${wrapperClass} ${classNames.wrapper}`}>
+  <El
+    className={`${classNames.wrapper}${wrapperClass ? " " + wrapperClass : ""}`}
+  >
     <video
-      className={`${videoClass} ${classNames.video}`}
+      className={`${classNames.video}${videoClass ? " " + videoClass : ""}`}
       loop={loop}
       muted={muted}
       poster={poster}
