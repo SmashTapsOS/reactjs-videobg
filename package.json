@@ -85,7 +85,7 @@
     "react": "^16.8.6"
   },
   "engines": {
-    "node": ">=10"
+    "node": ">=8"
   },
   "jest": {
     "moduleNameMapper": {
