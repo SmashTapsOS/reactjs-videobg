@@ -21,6 +21,14 @@ Easily add background videos to your webapps
 
 `yarn add reactjs-videobg`
 
+## Development
+
+This repo uses Commitizen for git commit conventions.
+
+Run yarn commit or npm run commit
+
+You'll be prompted to fill in any required fields and your commit messages will be formatted according to the standards
+
 ## Usage
 
 ```jsx
