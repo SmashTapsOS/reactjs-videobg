@@ -13,20 +13,20 @@ const VideoBg = ({
   children,
   el: El = "div"
 }) => (
-    <El
-      className={`${classNames.wrapper}${wrapperClass ? " " + wrapperClass : ""}`}
+  <El
+    className={`${classNames.wrapper}${wrapperClass ? " " + wrapperClass : ""}`}
+  >
+    <video
+      className={`${classNames.video}${videoClass ? " " + videoClass : ""}`}
+      loop={loop}
+      muted={muted}
+      poster={poster}
+      autoPlay={autoPlay}
     >
-      <video
-        className={`${classNames.video}${videoClass ? " " + videoClass : ""}`}
-        loop={loop}
-        muted={muted}
-        poster={poster}
-        autoPlay={autoPlay}
-      >
-        {children}
-      </video>
-    </El>
-  );
+      {children}
+    </video>
+  </El>
+);
 
 VideoBg.propTypes = {
   wrapperClass: PropTypes.string,
