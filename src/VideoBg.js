@@ -31,7 +31,7 @@ const VideoBg = ({
 VideoBg.propTypes = {
   wrapperClass: PropTypes.string,
   videoClass: PropTypes.string,
-  loop: PropTypes.string,
+  loop: PropTypes.bool,
   muted: PropTypes.bool,
   poster: PropTypes.string,
   autoPlay: PropTypes.bool,
