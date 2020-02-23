@@ -48,23 +48,34 @@ import poster from "./img/poster.jpg";
 
 [**sandbox**](https://codesandbox.io/s/sharp-poitras-qdync)
 
+## FAQ
+
+1. How to show the poster if video has finished.
+
+    This can be implemented with `onEnded` event handler. You could create an overlay and show it at the end of the video. Please have a look at this [**example**](https://github.com/samAbeywickrama/reactjs-videobg/blob/master/examples/cra/src/showPosterOnEnd)  
+
+    
+
 ## API
 
 ### `<VideoBg />`
 
-| Prop         | Type      | Default | Required | Description                                             |
-| ------------ | --------- | ------- | -------- | ------------------------------------------------------- |
-| wrapperClass | `String`  | none    | no       | className name for wrapper element.                     |
-| videoClass   | `String`  | none    | no       | className name for video element.                       |
-| loop         | `Boolean` | `true`  | no       | Video will start over again.                            |
-| autoPlay     | `Boolean` | `true`  | no       | Video will start playing as soon as it is ready.        |
-| poster       | `String`  | none    | no       | The image to be shown while the videos are downloading. |
-| muted        | `Boolean` | `true`  | no       | Should audio of the video be muted?                     |
+| Prop         | Type       | Default | Required | Description                                             |
+|--------------|------------|---------|----------|---------------------------------------------------------|
+| wrapperClass | `String`   | none    | no       | className name for wrapper element.                     |
+| videoClass   | `String`   | none    | no       | className name for video element.                       |
+| loop         | `Boolean`  | `true`  | no       | Video will start over again.                            |
+| autoPlay     | `Boolean`  | `true`  | no       | Video will start playing as soon as it is ready.        |
+| poster       | `String`   | none    | no       | The image to be shown while the videos are downloading. |
+| muted        | `Boolean`  | `true`  | no       | Should audio of the video be muted?                     |
+| onEnded      | `Function` | none    | no       | Triggers on video end                                   |
+| onPlay       | `Function` | none    | no       | Triggeres on play                                       |
+| onPlaying    | `function` | none    | no       | Triggers on each time the video loops                   |
 
 ### `<VideoBg.Source />`
 
 | Prop | Type     | Default | Required | Description                      |
-| ---- | -------- | ------- | -------- | -------------------------------- |
+|------|----------|---------|----------|----------------------------------|
 | src  | `String` | none    | yes      | static file or video file source |
 | type | `String` | none    | yes      | video type                       |
 

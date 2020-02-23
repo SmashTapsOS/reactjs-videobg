@@ -1,0 +1,12 @@
+.overlay {
+  background: url(../img/poster.jpg);
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+}
+.form {
+  position: relative;
+  z-index: 2;
+}
