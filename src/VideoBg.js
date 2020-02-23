@@ -9,24 +9,33 @@ const VideoBg = ({
   loop = true,
   muted = true,
   autoPlay = true,
+  onEnded,
   poster,
   children,
+  onPlaying,
+  onPlay,
   el: El = "div"
-}) => (
-  <El
-    className={`${classNames.wrapper}${wrapperClass ? " " + wrapperClass : ""}`}
-  >
-    <video
-      className={`${classNames.video}${videoClass ? " " + videoClass : ""}`}
-      loop={loop}
-      muted={muted}
-      poster={poster}
-      autoPlay={autoPlay}
+}) => {
+
+  return (
+    <El
+      className={`${classNames.wrapper}${wrapperClass ? " " + wrapperClass : ""}`}
     >
-      {children}
-    </video>
-  </El>
-);
+      <video
+        className={`${classNames.video}${videoClass ? " " + videoClass : ""}`}
+        loop={loop}
+        muted={muted}
+        poster={poster}
+        autoPlay={autoPlay}
+        onEnded={onEnded}
+        onPlaying={onPlaying}
+        onPlay={onPlay}
+      >
+        {children}
+      </video>
+    </El>
+  )
+};
 
 VideoBg.propTypes = {
   wrapperClass: PropTypes.string,
@@ -35,6 +44,9 @@ VideoBg.propTypes = {
   muted: PropTypes.bool,
   poster: PropTypes.string,
   autoPlay: PropTypes.bool,
+  onEnded: PropTypes.func,
+  onPlay: PropTypes.func,
+  onPlaying: PropTypes.func,
   children: PropTypes.oneOfType([
     PropTypes.shape({
       type: Source
