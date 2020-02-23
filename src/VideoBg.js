@@ -16,10 +16,11 @@ const VideoBg = ({
   onPlay,
   el: El = "div"
 }) => {
-
   return (
     <El
-      className={`${classNames.wrapper}${wrapperClass ? " " + wrapperClass : ""}`}
+      className={`${classNames.wrapper}${
+        wrapperClass ? " " + wrapperClass : ""
+      }`}
     >
       <video
         className={`${classNames.video}${videoClass ? " " + videoClass : ""}`}
@@ -34,7 +35,7 @@ const VideoBg = ({
         {children}
       </video>
     </El>
-  )
+  );
 };
 
 VideoBg.propTypes = {
